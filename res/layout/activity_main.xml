@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置初始化音量："
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/init_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0-100"
+            android:textColor="@android:color/white"
+            android:numeric="integer"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="设置初始化亮度："
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/init_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:hint="0-100"
+            android:numeric="integer"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/pause_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始播放后调用暂停接口"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/seekto_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始播放后快进10秒"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+        <RadioButton
+            android:id="@+id/nothing_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正常播放"
+            android:textColor="@android:color/white"
+            android:checked="true"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+     <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原画"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/super_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="超清"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+        
+        <RadioButton
+            android:id="@+id/little_pkg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小包"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" 
+            android:visibility="visible"/>
+    </RadioGroup>
+    
+    <Button
+        android:id="@+id/start_play"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="启动播放"
+        android:textSize="20dp" />
+
+</LinearLayout>
